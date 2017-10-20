@@ -1,0 +1,624 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}/*# sourceMappingURL=normalize.min.css.map */
+*{
+  font-family: Helvetica, sans-serif;
+}
+#logo{
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 1.8%;
+}
+.logo{
+  height: 137px;
+}
+/* style logo in nav bar */
+nav {
+  display: block;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+	border-bottom: #dbcec8 8px solid;
+  /* these keep nav on the top of the page, w/o blank space */
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  /*margin bottom is putting space between nav and header*/
+  /* made each of the links have the same height, so logo and hamburger icon don't mess up hover */
+  height: 29.3px;
+  padding-bottom: 10px;
+
+}
+/* doesn't show hamburger icon on desktop */
+.mynav .home-icon {
+  display: none;
+  margin: 2%;
+}
+
+nav li {
+    display: inline-block; 
+}
+#nav_con{
+    margin: 0 auto;
+    text-align: center;
+      /*adding margin to seperate logo from top of page*/
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.mynav {
+    position: relative;
+    font-size: 30px;
+    padding: 0;
+}
+.mynav li {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+}
+.mynav li a {
+    text-decoration: none;
+    color: #677c6a; 
+    display: inline-block;
+    padding-left: 20px;
+}
+/*The !important rule is a way to make your CSS cascade but also have the rules you feel are most crucial always be applied. 
+A rule that has the !important property will always be applied no matter where that rule appears in the CSS document.*/
+.mynav li a:hover,
+.mynav li li a:hover {
+ color: #fff !important;
+}
+/*CHANGES THE BACKGROUND COLOR ON HOVER*/
+.mynav li a:hover {
+ background: #dbcec8 !important;
+ padding-left: 23px; 
+ padding-right: 20px;
+ border-radius: 900px;
+}
+/*style selected nav li different color 
+.selected :user-select: {
+  background-color: red;
+}*/
+/********************************top nav end********************************/
+/********************************footer start********************************/
+#footer_container{
+	margin: 0 auto;
+    padding: 0.5%;
+    width: 100%;
+    background-color: #687c6b;
+    transition-duration: .3s;
+    bottom: 0;
+    border-bottom: #dbcec6 5px solid;
+    border-top: #DBCEC6 5px solid;
+  	/*position: fixed;*/
+}
+#footer_container #icon-container img:hover{
+	width: 4%;
+}
+footer {
+    display: block;
+    clear: both;
+    text-align: center;
+}
+#icon_con{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#icon-container{
+  margin: 0 auto;
+  width: 7%;
+}
+#icon-container a img{
+  margin: 0 auto;
+  width: 60%;
+}
+#footer_text{
+  line-height: 2;
+  width: 70%;
+  font-size: 10px;
+  color: white;
+}
+#footerlogo{
+  width: 30%;
+  margin: 0 auto;
+}
+.footerlogo{
+  height: 100px;
+}
+.disclaimer{
+    font-size: 10px;
+    margin: 1% 32% 0% 32%;
+}
+/**************************icons in footer***************************/
+#icon-container {
+    display: inline-block;
+}/*****linkedin icon*******/
+#in-icon-img {
+    width: 33px;
+    height: 33px;
+}/*****facebook icon********/
+#fb-icon-img {
+    width: 33px;
+    height: 33px;
+}/*****googleplus icon*****/
+#gg-icon-img {
+    width: 33px;
+    height: 33px;
+}
+#cp-icon-img {
+    width: 33px;
+    height: 33px;
+}
+#gh-icon-img {
+    width: 33px;
+    height: 33px;
+}
+#icon_con p{
+  font-size: 15px;
+  color: #dbcec8 ;
+}
+
+/********************************footer end********************************/
+/********************************index page start********************************/
+#home_bod{
+margin:0 auto;
+background-color: #f0f0ee;
+}
+#container { 
+	margin: 0 auto;
+    margin-top: 3%;
+   	/*background-image: url("lib/img/testbanner.jpg");*/
+   	/*z-index: 50;*/
+    /*margin-bottom: 50%;*/
+}
+
+#homepage_hero_headline {
+	padding-top: 20vh;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 5px 1px rgb(235, 229, 224);
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    margin-bottom: 0%;
+    margin-top: -8%;
+    color: #677c6a;
+    list-style-type: none;
+}
+#subtext{
+	padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    line-height: 1;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(235, 229, 224);
+    font-family: Helvetica, sans-serif;
+    color: #677c6a;
+}
+/*#ad_con{
+  max-width: 100%;
+  background-color: black;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}*/
+#homeintro{
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: 20%;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    color: #677c6a;
+    line-height: 1.5;
+    border-bottom: #dbcec8 3px solid;
+    border-top: #dbcec8 3px solid;
+    padding: 3% 0;
+
+}
+#welcome h2{
+  color: #677c6a;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  line-height: 3;
+  padding: 0 0 10px 0px;
+}
+#welcome p a{
+  color: #000;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  line-height: 1;
+}
+/* made boxes float left to display as horizontal on page */
+#textbox{
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+#textbox h2{
+    color: #455942;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #dbcec7;
+    text-align: center;
+    padding: 3% .5% 3.8% 0.5%;
+}
+#webbox h2 {
+	margin: 0 auto;
+}
+#webbox{
+    background-color: #dde5d4;
+    width: 51%;
+    padding: 0% 0% 1% 0%;
+    margin: 5.5% 16.5% 15.5% 25%;
+    text-align: left;
+}
+#pbox{
+	  margin-top: 3%;
+    padding: 0% 3% 2% 3%;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2;
+}
+#topline p a{
+    display: block;
+    margin: 5% auto .2%;
+    font-weight: 600;
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    color: #dbcec6;
+    text-align: center;
+    background-color: #687c6b;
+    width: 27%;
+    padding: .8%;
+    border-radius: 900px;
+    font-style: none;
+    text-decoration: none;
+}
+
+
+/********************************index page end********************************/
+/********************************About me page start********************************/
+/*class hero headline applied on about, resume, contact and project page*/
+.hero_headline{
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 1px 5px 1px rgb(235, 229, 224);
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    margin-bottom:  2%;
+    margin-top: 0%;
+    color: #677c6a;
+}
+.about {
+	margin: 5%;
+}
+
+.about h2 {
+	color: #687c6b;
+    margin: 1% 1% 2% 0;
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.about p {
+    width: 50%;
+    line-height: 1.4;
+    font-family: Helvetica, sans-serif;
+  }
+  .about li {
+    line-height: 1.4;
+  }
+
+#tag_photo {
+	  width: 41%;
+    height: 100%;
+    border-radius: 5%;
+    float: right;
+    margin-top: 5%;
+}
+#about_con{
+	margin-bottom: 20%;
+}
+.about p a{
+    width: 50%;
+/*    line-height: 1.4;*/
+    font-family: Helvetica, sans-serif;
+    /*text-decoration: none; */
+    color: #687c6b;
+}
+/********************************About me page end********************************/
+/********************************Resume page start********************************/
+
+/* style my personal info */
+.personal-info {
+  text-align: center;
+  line-height: 1.3;
+
+}
+
+/* style name in fancy font */
+#resume-name {
+  font-weight: bold;
+  font-size: 24px;
+  color: #36547D;
+  line-height: 1.3;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+
+}
+.resume {
+    margin: 10%;
+    padding: 12px;
+    /* create solid border around main content */
+    border: 16px solid #dbcec7;
+    margin-bottom: 20%;
+    background-color: #f0f0ee;
+}
+/*targeting my name on resume*/
+.resume h2 {
+	color: #687c6b;
+    margin: 1% 1% 1% 0;
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+/*targeting address phone num and email under name*/
+#resume_sub{
+	/*color: #687c6b;*/
+	line-height: 2;
+  margin: 0 auto;
+  line-height: 3;
+  margin: 0 auto;
+  font-size: 17.5px;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+}
+.resume div {
+	margin: 2%;
+	line-height: 1.3;
+}
+
+/* style line break */
+.resumetitle {
+  border-bottom: 3px solid #677c6a;
+  display: block;
+  line-height: 2.3;
+  color: #687c6b;
+  font-size: 20px;
+  margin-bottom: 0.5%;
+  margin-top: 1.5%;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#LinkRes {
+    text-decoration: none;
+    color: #687c6b;
+    line-height: 2;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    float: right;
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    width: 14%;
+    border-radius: 900px;
+}
+#skilllist1{
+  /*list-style-type: square;*/
+  display: inline-block;
+      margin: 3% -15% 3% 5%;
+}
+#skilllist2{
+  /*list-style-type: square;*/
+  display: inline-block;
+  margin: 4% 0 0 25%;
+}
+.activitytext{
+  color: black;
+  line-height: 1.8;
+}
+.activitytext1{
+  color: black;
+}
+.activitytext2{
+    color: black;
+    display: flex;
+}
+.jobtext{
+	line-height: 2;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 0.3%;
+  margin-top: 1%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.jobdates{
+  color: black;
+  line-height: 2;
+  margin-bottom: 0.5%;
+  margin-top: 1.5%;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+/********************************Resume page end********************************/
+/********************************My Projects page start********************************/
+/*class subtext applied on about, resume, contact and project page*/
+.subtext{
+	  padding-top: 5vh;
+    padding-bottom: 3vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    line-height: 1;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(235, 229, 224);
+    font-family: 'Sansita', Arial, Helvetica, sans-serif;
+    color: #000;	
+}
+/* container */
+.codenav{
+  margin: 5%;
+}
+
+.codenav li a {
+	text-decoration: none;
+  color: #697c6c;
+  line-height: 2;
+}
+
+.codenav section {
+	/* hide section content until its selected */
+  display: none;
+  text-align: left;
+}
+
+.codenav section li {
+	margin: 3%;
+	list-style-type: none;
+}
+
+/* takes away the radio buttons next to labels */
+.codenav input {
+  display: none;
+}
+.codenav_container{
+  text-align: center;
+}
+.codenav_container label {
+display: inline-block;
+    margin-bottom: 1%;
+    padding: 15px;
+    width: 10%;
+    max-width: 10%;
+    max-height: 20%;
+    text-align: center;
+    color: #687c6b;
+    border: 1px solid #687c6b;
+    background-color: #dbcec7;
+    box-sizing: border-box;
+}
+
+.codenav label:hover {
+  color: #f0f0ee;
+  cursor: pointer;
+}
+
+/* targets all label elements placed immediately after input elements */
+.codenav input:checked + label {
+  color: #687c6b;
+  border: 2.5px solid #687c6b;
+}
+
+/* targets every content id that comes before a tab id element,
+if they are clicked then diplay there content by marking them as checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7, 
+#tab8:checked ~ #content8 {
+  display: block;
+  margin-bottom: 5%;
+}
+
+.codenav section h2 a:hover {
+	color: #D19700;
+}
+.codenav_container section{
+  text-align: justify;
+  margin: 1% 1% 1% 1%;
+}
+.codenav ul {
+  /*added border to make a "box" look to it*/
+    border: 1px solid #dbcec6;
+    /*aligned the words*/
+    align-items: center;
+    /*added margin on left and right sides so it was more center*/
+    margin: 0% 7.7% 0% 7.7%;
+    /*puts space between items*/
+    justify-content: space-between;
+    /*The inline-table value does not have a direct mapping in HTML. It behaves like a <table> HTML element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context.*/
+    display: inline-table;
+    max-width: 84%;
+    width: 84%;
+}
+#featuredpens{
+  border: 1px solid #dbcec6;
+    /*aligned the words*/
+    align-items: center;
+    /*added margin on left and right sides so it was more center*/
+    margin: 0% 8.7% 0% 8.7%;
+    margin-bottom: 20%;
+}
+#featuredpens h1{
+  color: #687c6b;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+  padding: 0 0 0 10px;
+}
+/********************************My Projects page end********************************/
+/********************************Contact page start********************************/
+#contact_body{
+  	margin: 0 auto;
+    margin-top: 5%;
+  }
+#contact_title{
+  font-size: 52px;
+  margin: 0 0 20px;
+  color: #677c6a;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+  position: relative;
+  /*The inline-block element gets a block element box that will be flowed with surrounding content as if it were a single inline box.*/
+  display: inline-block;
+}
+#row{
+    margin-bottom: 30%;
+    max-width: 30%;
+    margin-left: 34.7%;
+    margin-top: 1%;
+}
+#row p{
+  text-align: left;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+  color: #000;
+  line-height: 2;
+}
+#sub_contact{
+  margin: 1%;
+  font-size: 30px;
+  margin: 0 0 20px;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+
+}
+#contact {
+  text-align: center;
+}
+.col-sm-12{
+    width: 100%;
+    background-color: #dde5d4;
+    outline: none;
+    height: 114px;
+    color: #000;
+    padding: 7px;
+  }
+  .col-md-6{
+    width: 100%;
+    background-color: #dde5d4;
+    outline: none;
+    height: 40px;
+    color: #000;
+    padding: 7px;
+  }
+  input[type=submit].btn-block {
+    width: 16%;
+    background-color: #dbcec7;
+    outline: none;
+    height: 40px;
+    color: #687c6b;
+  }
+  
+/********************************Contact page end********************************/
+
+/********************************media queries********************************/
+
+
+
+
+
+
+
+
